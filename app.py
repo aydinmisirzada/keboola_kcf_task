@@ -7,8 +7,8 @@ URL = "https://connection.eu-central-1.keboola.com/v2/storage/files"
 with open("config.json","r") as f:
     config = json.load(f)
 
-limit = -99
-offset = 100
+
+offset = 0
 params = {"showExpired":"true","limit":"1","offset":"0"}
 response = requests.get(url=URL,headers=config,params=params)
 
