@@ -2,7 +2,7 @@ import requests
 import json
 import pandas as pd
 
-URL = "https://connection.north-europe.azure.keboola.com/v2/storage/files"
+URL = "https://connection.eu-central-1.keboola.com/v2/storage/files"
 
 with open("config.json","r") as f:
     config = json.load(f)
