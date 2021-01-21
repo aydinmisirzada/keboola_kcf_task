@@ -20,7 +20,6 @@ with open("response.csv","a") as f:
 
     while response.text != "[]":
         offset += 100
-        print("Current offset:",offset)
         params['offset'] = str(offset)
         response = requests.get(url=URL,headers=config,params=params)
         if response.text != "[]":
